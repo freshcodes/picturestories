@@ -1,0 +1,8 @@
+.chart {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(239, 239, 239, 0.58);
+  max-width: 800px;
+  text-align: center;
+}

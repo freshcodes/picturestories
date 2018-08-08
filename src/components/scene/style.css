@@ -1,0 +1,31 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('/assets/Game_Assets_13-30.png');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+
+.pyramid1 {
+  position: absolute;
+  top: -15vh;
+  left: 1vh;
+  height: 20vh;
+  width: 40vh;
+  background-image: url('/assets/Game_Assets_13-08.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sand {
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  background-image: url('/assets/Game_Assets_13-07.png');
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}

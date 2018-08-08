@@ -1,0 +1,16 @@
+.about {
+  position: relative;
+  z-index: 2;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(239, 239, 239, 0.58);
+  max-width: 500px;
+
+}
+.about h2 {
+  margin-bottom: 1rem;
+}
+.about p {
+  margin-bottom: 0.5rem;
+}
