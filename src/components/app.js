@@ -7,6 +7,7 @@ import Scene from './scene'
 // Code-splitting is automated for routes
 import Home from '../routes/home'
 import About from '../routes/about'
+import Story from '../routes/story'
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -25,6 +26,7 @@ export default class App extends Component {
         <Router onChange={this.handleRoute}>
           <Home path='/' />
           <About path='/about' />
+          <Story path='/story/:storyId' />
         </Router>
       </div>
     )

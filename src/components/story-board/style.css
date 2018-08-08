@@ -4,6 +4,10 @@
   border-radius: 0.5rem;
   background-color: rgba(239, 239, 239, 0.58);
   max-width: 800px;
-  min-height: 72px;
+  min-height: 84px;
   text-align: center;
+}
+
+.storyboard p {
+  line-height: 65px;
 }

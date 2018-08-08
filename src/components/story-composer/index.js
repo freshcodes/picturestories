@@ -1,12 +1,15 @@
 import { h, Component } from 'preact'
+import { route } from 'preact-router'
 import style from './style'
 
+import firebase from 'firebase/app'
 import HieroglyphChart from '../../components/hieroglyph-chart'
 import StoryBoard from '../../components/story-board'
 
 export default class StoryComposer extends Component {
   state = {
-    glyphs: []
+    glyphs: [],
+    saving: false
   }
 
   addGlyph = (glyph, index) => {
@@ -22,14 +25,23 @@ export default class StoryComposer extends Component {
   }
 
   saveStory = () => {
-    console.log('need to save story')
+    this.setState({ saving: true })
+    firebase.firestore().collection('stories').add({
+      glyphs: this.state.glyphs
+    }).then((docRef) => {
+      this.setState({ saving: false })
+      route(`/story/${docRef.id}`)
+    }).catch((error) => {
+      this.setState({ saving: false })
+      console.error("Error adding document: ", error)
+    })
   }
 
   render () {
     return (
       <div class={style.storycomposer}>
-        <StoryBoard glyphs={this.state.glyphs} onGlyphClick={this.removeGlyph} />
-        <button onClick={this.saveStory} disabled={!this.state.glyphs.length}>Save Story</button>
+        <StoryBoard glyphs={this.state.glyphs} onGlyphClick={this.removeGlyph} emptyMessage="Click Hieroglyphs below to create your story" />
+        <button onClick={this.saveStory} disabled={!this.state.glyphs.length || this.state.saving}>Save Story</button>
         <HieroglyphChart onGlyphClick={this.addGlyph} />
       </div>
     )
