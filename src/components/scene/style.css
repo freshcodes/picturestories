@@ -21,6 +21,27 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.pyramids {
+  position: absolute;
+  top: -5.5vh;
+  left: 100vh;
+  height: 9vh;
+  width: 40vh;
+  background-image: url('/assets/Game_Assets_13-03.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.camel1 {
+  position: absolute;
+  top: 1vh;
+  left: 100vh;
+  height: 2vh;
+  width: 3vh;
+  background-image: url('/assets/Game_Assets_13-12.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
 
 .sand {
   position: absolute;
