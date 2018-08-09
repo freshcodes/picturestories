@@ -1,11 +1,11 @@
 {
-  "name": "picture-stories",
-  "short_name": "picture-stories",
+  "name": "Picture Stories",
+  "short_name": "Picture Stories",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "background_color": "#dc7855",
+  "theme_color": "#dc7855",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
