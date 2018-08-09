@@ -4,9 +4,11 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url('/assets/Game_Assets_13-30.png');
-  background-size: 100vw 100vh;
-  background-repeat: no-repeat;
+  background: -webkit-linear-gradient(top, rgb(58, 200, 185) 0%, rgb(141, 213, 152) 20%, rgb(224, 227, 119) 40%, rgb(255, 232, 107) 100%);
+  background: -o-linear-gradient(top, rgb(58, 200, 185) 0%, rgb(141, 213, 152) 20%, rgb(224, 227, 119) 40%, rgb(255, 232, 107) 100%);
+  background: -ms-linear-gradient(top, rgb(58, 200, 185) 0%, rgb(141, 213, 152) 20%, rgb(224, 227, 119) 40%, rgb(255, 232, 107) 100%);
+  background: -moz-linear-gradient(top, rgb(58, 200, 185) 0%, rgb(141, 213, 152) 20%, rgb(224, 227, 119) 40%, rgb(255, 232, 107) 100%);
+  background: linear-gradient(to bottom, rgb(58, 200, 185) 0%, rgb(141, 213, 152) 20%, rgb(224, 227, 119) 40%, rgb(255, 232, 107) 100%);
 }
 
 .pyramid1 {
