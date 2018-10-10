@@ -10,12 +10,9 @@ import About from '../routes/about'
 import Story from '../routes/story'
 
 export default class App extends Component {
-  /** Gets fired when the route changes.
-   *  @param {Object} event   "change" event from [preact-router](http://git.io/preact-router)
-   *  @param {string} event.url The newly routed URL
-   */
-  handleRoute = e => {
-    this.currentUrl = e.url
+  handleRoute = (event) => {
+    if (typeof window === 'undefined') return
+    if (window.ga) window.ga('send', 'pageview', event.url)
   }
 
   render () {
