@@ -1,4 +1,5 @@
 const WorkboxPlugin = require('workbox-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 export default config => {
   config.plugins.push(
@@ -8,6 +9,8 @@ export default config => {
       include: [/\.html$/, /\.js$/, /\.svg$/, /\.css$/, /\.png$/, /\.ico$/, /\.woff2$/]
     })
   )
+
+  config.plugins.push( new CopyWebpackPlugin([{ context: `${__dirname}/src/assets`, from: `robots.txt` }]) )
 
   return config
 }
