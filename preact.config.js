@@ -1,5 +1,13 @@
-const { generateSw } = require('preact-cli-workbox-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
-export default function (config, env, helpers) {
-  return generateSw(config, helpers, {})
+export default config => {
+  config.plugins.push(
+    new WorkboxPlugin.InjectManifest({
+      swSrc: './service-worker.js',
+      swDest: './sw.js',
+      include: [/\.html$/, /\.js$/, /\.svg$/, /\.css$/, /\.png$/, /\.ico$/, /\.woff2$/]
+    })
+  )
+
+  return config
 }
