@@ -4,7 +4,7 @@ import style from './style'
 import firebase from 'firebase/app'
 import StoryBoard from '../../components/story-board'
 
-export default class Story extends StoryBoard {
+export default class Story extends Component {
   state = {
     glyphs: []
   }
