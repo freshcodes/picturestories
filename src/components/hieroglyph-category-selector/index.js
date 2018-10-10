@@ -23,7 +23,7 @@ export default class HieroglyphCategorySelector extends Component {
   render () {
     const options = hieroglyphs.categories.map((cat) => (<option value={cat.name}>{cat.name}</option>))
     return (
-      <select aria-label="Hieroglyph Categories" class={style.categoryselector} value={this.state.category} onInput={this.categoryChange}>
+      <select aria-label='Hieroglyph Categories' class={style.categoryselector} value={this.state.category} onInput={this.categoryChange}>
         {options}
       </select>
     )

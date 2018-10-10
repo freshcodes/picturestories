@@ -33,14 +33,14 @@ export default class StoryComposer extends Component {
       route(`/story/${docRef.id}`)
     }).catch((error) => {
       this.setState({ saving: false })
-      console.error("Error adding document: ", error)
+      console.error('Error adding document: ', error)
     })
   }
 
   render () {
     return (
       <div class={style.storycomposer}>
-        <StoryBoard glyphs={this.state.glyphs} onGlyphClick={this.removeGlyph} emptyMessage="Click Hieroglyphs below to create your story" />
+        <StoryBoard glyphs={this.state.glyphs} onGlyphClick={this.removeGlyph} emptyMessage='Click Hieroglyphs below to create your story' />
         <button onClick={this.saveStory} disabled={!this.state.glyphs.length || this.state.saving}>Save Story</button>
         <HieroglyphChart onGlyphClick={this.addGlyph} />
       </div>
