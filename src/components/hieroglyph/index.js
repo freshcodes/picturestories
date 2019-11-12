@@ -1,9 +1,9 @@
 import { h } from 'preact'
-import style from './style'
+import style from './style.css'
 
 export default function ({ glyph, index, onGlyphClick }) {
   onGlyphClick = onGlyphClick || function () {}
   return (
-    <div class={style.hieroglyph + ' hieroglyph'} onClick={(event) => onGlyphClick(glyph, index)}>{glyph.str}</div>
+    <button type='button' class={style.hieroglyph + ' hieroglyph'} onClick={(event) => onGlyphClick(glyph, index)}>{glyph.str}</button>
   )
 }

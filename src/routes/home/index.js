@@ -1,12 +1,12 @@
 import { h } from 'preact'
-import style from './style'
+import style from './style.css'
 
 import StoryComposer from '../../components/story-composer'
 
 const Home = () => (
-  <div class={style.home}>
+  <main class={style.home}>
     <StoryComposer />
-  </div>
+  </main>
 )
 
 export default Home

@@ -131,6 +131,14 @@ function glyphsFromIntRange (range) {
   return arr
 }
 
+function glyphsFromCodesArray (codes) {
+  return codes.map((num) => {
+    let hex = num.toString(16)
+    let str = String.fromCodePoint(`0x${hex}`)
+    return { num, hex, str }
+  })
+}
+
 function glyphsByCategoryName (name) {
   const categoryObj = categories.filter((category) => category.name === name)
   return !categoryObj ? [] : glyphsFromIntRange(categoryObj[0].codes)
@@ -154,6 +162,7 @@ export default {
   areCharactersInRange,
   isCharacterInRange,
   glyphsFromIntRange,
+  glyphsFromCodesArray,
   randomCharacterInRange,
   categories
 }

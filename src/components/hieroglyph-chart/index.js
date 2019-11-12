@@ -1,5 +1,5 @@
 import { h, Component } from 'preact'
-import style from './style'
+import style from './style.css'
 
 import hieroglyphs from '../../lib/hieroglyphs.js'
 import HieroglyphCategorySelector from '../hieroglyph-category-selector'

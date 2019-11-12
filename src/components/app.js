@@ -10,20 +10,15 @@ import About from '../routes/about'
 import Story from '../routes/story'
 
 export default class App extends Component {
-  handleRoute = (event) => {
-    if (typeof window === 'undefined') return
-    if (window.ga) window.ga('send', 'pageview', event.url)
-  }
-
   render () {
     return (
       <div id='app'>
         <Scene />
         <Header />
-        <Router onChange={this.handleRoute}>
+        <Router>
           <Home path='/' />
           <About path='/about' />
-          <Story path='/story/:storyId' />
+          <Story path='/story' />
         </Router>
       </div>
     )

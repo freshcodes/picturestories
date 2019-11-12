@@ -1,1 +1,12 @@
-[{"url":"/","title":"Picture Stories"},{"url":"/about","title":"About | Picture Stories"}]
+[
+	{
+		"url":"/",
+		"title":"Picture Stories"
+	},{
+		"url":"/story",
+		"title":"Picture Stories"
+	},{
+		"url":"/about",
+		"title":"About | Picture Stories"
+	}
+]

@@ -1,7 +1,8 @@
 import { h, Component } from 'preact'
-import style from './style'
+import LZString from 'lz-string'
+import style from './style.css'
+import hieroglyphs from '../../lib/hieroglyphs.js'
 
-import firebase from 'firebase/app'
 import StoryBoard from '../../components/story-board'
 
 export default class Story extends Component {
@@ -10,17 +11,17 @@ export default class Story extends Component {
   }
 
   componentDidMount () {
-    firebase.firestore().collection('stories').doc(this.props.storyId)
-      .onSnapshot((doc) => {
-        this.setState({ glyphs: doc.data().glyphs })
-      })
+    let compressed = window.location.search.substring(1)
+    let codes = LZString.decompressFromEncodedURIComponent(compressed).split(',').map(code => parseInt(code, 10))
+    let glyphs = hieroglyphs.glyphsFromCodesArray(codes)
+    this.setState({ glyphs })
   }
 
   render () {
     return (
-      <div class={style.story}>
+      <main class={style.story}>
         <StoryBoard glyphs={this.state.glyphs} emptyMessage='Loading...' />
-      </div>
+      </main>
     )
   }
 }
