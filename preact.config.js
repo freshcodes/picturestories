@@ -5,7 +5,7 @@ export default config => {
   config.plugins.push(
     new WorkboxPlugin.InjectManifest({
       swSrc: './service-worker.js',
-      swDest: './sw.js',
+      swDest: './service-worker.js',
       include: [/\.html$/, /\.js$/, /\.svg$/, /\.css$/, /\.png$/, /\.ico$/, /\.woff2$/]
     })
   )
