@@ -1,5 +1,7 @@
 # Picture Stories
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/freshcodes/picturestories.svg)](https://greenkeeper.io/)
+
 This was a quick, for-fun PWA built after someone mentioned using hieroglyphics for communication.
 
 Turned out to be a lesson in [unicode issues in JavaScript](https://mathiasbynens.be/notes/javascript-unicode).
