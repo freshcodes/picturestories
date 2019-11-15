@@ -19,7 +19,7 @@ export default class HieroglyphChart extends Component {
   }
 
   render () {
-    const glyphs = this.state.glyphs.map((glyph, index) => <Hieroglyph index={index} onGlyphClick={(event) => this.onGlyphClick(glyph, index)} glyph={glyph} />)
+    const glyphs = this.state.glyphs.map((glyph, index) => <Hieroglyph key={glyph.num} index={index} onGlyphClick={(event) => this.onGlyphClick(glyph, index)} glyph={glyph} />)
     return (
       <div class={style.chart}>
         <HieroglyphCategorySelector onCategoryChange={this.onCategoryChange} />

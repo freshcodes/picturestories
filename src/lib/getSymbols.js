@@ -1,3 +1,4 @@
+// https://mathiasbynens.be/notes/javascript-unicode#iterating-over-symbols
 function getSymbols (string) {
   let index = 0
   const length = string.length

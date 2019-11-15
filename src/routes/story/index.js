@@ -11,9 +11,9 @@ export default class Story extends Component {
   }
 
   componentDidMount () {
-    let compressed = window.location.search.substring(1)
-    let codes = LZString.decompressFromEncodedURIComponent(compressed).split(',').map(code => parseInt(code, 10))
-    let glyphs = hieroglyphs.glyphsFromCodesArray(codes)
+    const compressed = window.location.search.substring(1)
+    const codes = LZString.decompressFromEncodedURIComponent(compressed).split(',').map(code => parseInt(code, 10))
+    const glyphs = hieroglyphs.glyphsFromCodesArray(codes)
     this.setState({ glyphs })
   }
 

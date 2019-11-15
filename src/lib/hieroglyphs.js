@@ -116,16 +116,16 @@ function randomCharacterInRange () {
   const codePoint = Math.floor(Math.random() * (overallRange.end - overallRange.start)) + overallRange.start
   if (codePoint > exclusionRange.start && codePoint < exclusionRange.end) return randomCharacterInRange()
   else {
-    return String.fromCodePoint(`0x${codePoint.toString(16)}`)
+    return strFromHex(codePoint.toString(16))
   }
 }
 
 function glyphsFromIntRange (range) {
   const arr = []
-  for (let i = 0, l = range.end - range.start; i < l; i++) {
-    let num = i + range.start
-    let hex = num.toString(16)
-    let str = String.fromCodePoint(`0x${hex}`)
+  for (let i = 0, l = range.end - range.start; i <= l; i++) {
+    const num = i + range.start
+    const hex = num.toString(16)
+    const str = strFromHex(hex)
     arr.push({ num, hex, str })
   }
   return arr
@@ -133,8 +133,8 @@ function glyphsFromIntRange (range) {
 
 function glyphsFromCodesArray (codes) {
   return codes.map((num) => {
-    let hex = num.toString(16)
-    let str = String.fromCodePoint(`0x${hex}`)
+    const hex = num.toString(16)
+    const str = strFromHex(hex)
     return { num, hex, str }
   })
 }
@@ -157,12 +157,17 @@ function isCharacterInRange (char) {
   return (codePoint >= overallRange.start && codePoint < exclusionRange.start) || (codePoint > exclusionRange.end && codePoint <= overallRange.end)
 }
 
+function strFromHex (hex) {
+  return String.fromCodePoint(`0x${hex}`)
+}
+
 export default {
   glyphsByCategoryName,
   areCharactersInRange,
   isCharacterInRange,
   glyphsFromIntRange,
   glyphsFromCodesArray,
+  strFromHex,
   randomCharacterInRange,
   categories
 }

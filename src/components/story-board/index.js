@@ -9,7 +9,7 @@ export default class StoryBoard extends Component {
   }
 
   render () {
-    const glyphs = (this.props.glyphs || []).map((glyph, index) => <Hieroglyph index={index} onGlyphClick={(event) => this.onGlyphClick(glyph, index)} glyph={glyph} />)
+    const glyphs = (this.props.glyphs || []).map((glyph, index) => <Hieroglyph key={glyph.num} index={index} onGlyphClick={(event) => this.onGlyphClick(glyph, index)} glyph={glyph} />)
     const emptyMessage = <p>{this.props.emptyMessage}</p>
     return (
       <div class={style.storyboard}>

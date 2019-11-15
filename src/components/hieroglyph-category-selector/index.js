@@ -9,7 +9,7 @@ export default class HieroglyphCategorySelector extends Component {
   }
 
   categoryChange = (event) => {
-    let category = event.target.value
+    const category = event.target.value
     this.setState({ category })
     this.props.onCategoryChange(category)
   }
@@ -17,13 +17,13 @@ export default class HieroglyphCategorySelector extends Component {
   componentDidMount () {
     const max = hieroglyphs.categories.length
     const index = Math.floor(Math.random() * max)
-    let category = hieroglyphs.categories[index].name
+    const category = hieroglyphs.categories[index].name
     this.setState({ category })
     this.props.onCategoryChange(category)
   }
 
   render () {
-    const options = hieroglyphs.categories.map((cat) => (<option value={cat.name}>{cat.name}</option>))
+    const options = hieroglyphs.categories.map((cat) => (<option key={cat.name} value={cat.name}>{cat.name}</option>))
     return (
       <select aria-label='Hieroglyph Categories' class={style.categoryselector} value={this.state.category} oninput={this.categoryChange}>
         {options}

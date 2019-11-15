@@ -25,8 +25,8 @@ export default class StoryComposer extends Component {
   }
 
   shareStory = () => {
-    let codes = this.state.glyphs.map(glyph => glyph.num).join(',')
-    let compressed = LZString.compressToEncodedURIComponent(codes)
+    const codes = this.state.glyphs.map(glyph => glyph.num).join(',')
+    const compressed = LZString.compressToEncodedURIComponent(codes)
     route(`/story?${compressed}`)
   }
 
@@ -34,7 +34,7 @@ export default class StoryComposer extends Component {
     return (
       <div class={style.storycomposer}>
         <StoryBoard glyphs={this.state.glyphs} onGlyphClick={this.removeGlyph} emptyMessage='Click Hieroglyphs below to create your story' />
-        <button onClick={this.shareStory} disabled={!this.state.glyphs.length || this.state.saving}>Share Story</button>
+        <button type='button' onClick={this.shareStory} disabled={!this.state.glyphs.length || this.state.saving}>Share Story</button>
         <HieroglyphChart onGlyphClick={this.addGlyph} />
       </div>
     )
