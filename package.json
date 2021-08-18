@@ -97,7 +97,7 @@
     "preact-cli": "^3.0.2",
     "preact-render-spy": "^1.2.1",
     "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^22.0.0"
   },
   "jest": {
     "moduleNameMapper": {
