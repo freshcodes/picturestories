@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'NotoSansEgyptianHieroglyphs';
+  src:
+    url(/1b5e50bfd59c6809c31c8c7709389822.woff2) format('woff2'),
+    url(/ad55bb48b03c57282554d78ca82c016f.woff) format('woff'),
+    url(/5e1c02ac9f6b617ff61ef994e43e2640.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fafafa;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  font-weight: 400;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+button,
+select {
+  font-size: 16px;
+}
+
+.header__3ax1h {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.header__3ax1h h1 {
+  margin: 0;
+  padding: 0 15px;
+  line-height: 56px;
+}
+
+.header__3ax1h nav {
+  font-size: 100%;
+}
+
+.header__3ax1h nav a {
+  display: inline-block;
+  padding: 0 15px;
+  min-width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header__3ax1h nav a:hover,
+.header__3ax1h nav a:active {
+  /* background: rgba(0,0,0,0.2); */
+}
+
+.header__3ax1h nav a.active__2XB2z {
+  /* background: rgba(0,0,0,0.4); */
+}
+
+.container__QInFS {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgb(58, 200, 185) 0%, rgb(141, 213, 152) 20%, rgb(224, 227, 119) 40%, rgb(255, 232, 107) 100%);
+}
+
+.pyramid1__4ARNW {
+  position: absolute;
+  top: -15vh;
+  left: 1vh;
+  height: 20vh;
+  width: 40vh;
+  background-image: url(/4c29838a237b6ca2cceb7cec8bbc2fcc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pyramids__L6Fqv {
+  position: absolute;
+  top: -5.5vh;
+  left: 100vh;
+  height: 9vh;
+  width: 40vh;
+  background-image: url(/28d0dd8948b8a43e6be841495eb0d207.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.camel1__26phn {
+  position: absolute;
+  top: 1vh;
+  left: 100vh;
+  height: 2vh;
+  width: 3vh;
+  background-image: url(/369bb37562a4c7355dcc0a70cf8d9fdb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.75;
+}
+
+.sand__7zvr1 {
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  background-image: url(/3a8f561aa9502d80a4135a84a84ce5f1.png);
+  background-size: auto 100%;
+  background-repeat: repeat-x;
+}
+
+.home__5d1wS {
+  position: relative;
+  z-index: 2;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.storycomposer__3v2PB {
+  margin: 0.5rem auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.chart__1ePdF {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(239, 239, 239, 0.58);
+  max-width: 800px;
+  text-align: center;
+}
+
+.categoryselector__2gvA2 {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.hieroglyph__2cMK6 {
+  display: inline-block;
+  font-family: 'NotoSansEgyptianHieroglyphs';
+  font-size: 2rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: bold;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background: none;
+}
+
+.hieroglyph__2cMK6:hover,
+.hieroglyph__2cMK6:focus {
+  transform: scale(1.8);
+}
+
+.storyboard__2YICt {
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: rgba(239, 239, 239, 0.58);
+  max-width: 800px;
+  min-height: 84px;
+  text-align: center;
+}
+
+.storyboard__2YICt p {
+  line-height: 1.5em;
+}
+
+.about__3kD8f {
+  position: relative;
+  z-index: 2;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(239, 239, 239, 0.58);
+  max-width: 500px;
+}
+
+.about__3kD8f h2 {
+  margin-bottom: 1rem;
+}
+
+.about__3kD8f p {
+  margin-bottom: 0.5rem;
+}
+
+.story__1tQ51 {
+  position: relative;
+  z-index: 2;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+
+/*# sourceMappingURL=ssr-bundle.82bd7.css.map*/
