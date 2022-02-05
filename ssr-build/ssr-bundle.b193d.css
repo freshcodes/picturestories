@@ -43,24 +43,24 @@ select {
   font-size: 16px;
 }
 
-.header__3ax1h {
+.header__OVZyn {
   position: relative;
   width: 100%;
   padding: 0;
   text-align: center;
 }
 
-.header__3ax1h h1 {
+.header__OVZyn h1 {
   margin: 0;
   padding: 0 15px;
   line-height: 56px;
 }
 
-.header__3ax1h nav {
+.header__OVZyn nav {
   font-size: 100%;
 }
 
-.header__3ax1h nav a {
+.header__OVZyn nav a {
   display: inline-block;
   padding: 0 15px;
   min-width: 50px;
@@ -68,16 +68,16 @@ select {
   text-decoration: none;
 }
 
-.header__3ax1h nav a:hover,
-.header__3ax1h nav a:active {
+.header__OVZyn nav a:hover,
+.header__OVZyn nav a:active {
   /* background: rgba(0,0,0,0.2); */
 }
 
-.header__3ax1h nav a.active__2XB2z {
+.header__OVZyn nav a.active__r\+Z6z {
   /* background: rgba(0,0,0,0.4); */
 }
 
-.container__QInFS {
+.container__0rDIn {
   position: fixed;
   top: 0;
   right: 0;
@@ -86,7 +86,7 @@ select {
   background: linear-gradient(to bottom, rgb(58, 200, 185) 0%, rgb(141, 213, 152) 20%, rgb(224, 227, 119) 40%, rgb(255, 232, 107) 100%);
 }
 
-.pyramid1__4ARNW {
+.pyramid1__e1Iv\+ {
   position: absolute;
   top: -15vh;
   left: 1vh;
@@ -97,7 +97,7 @@ select {
   background-repeat: no-repeat;
 }
 
-.pyramids__L6Fqv {
+.pyramids__M4WZJ {
   position: absolute;
   top: -5.5vh;
   left: 100vh;
@@ -108,7 +108,7 @@ select {
   background-repeat: no-repeat;
 }
 
-.camel1__26phn {
+.camel1__tAxFD {
   position: absolute;
   top: 1vh;
   left: 100vh;
@@ -120,7 +120,7 @@ select {
   opacity: 0.75;
 }
 
-.sand__7zvr1 {
+.sand__NC-BZ {
   position: absolute;
   bottom: 0;
   height: 50vh;
@@ -130,20 +130,20 @@ select {
   background-repeat: repeat-x;
 }
 
-.home__5d1wS {
+.home__uRcqa {
   position: relative;
   z-index: 2;
   margin: 2rem auto;
   width: 100%;
 }
 
-.storycomposer__3v2PB {
+.storycomposer__ezoHr {
   margin: 0.5rem auto;
   max-width: 800px;
   text-align: center;
 }
 
-.chart__1ePdF {
+.chart__rVU3F {
   margin: 0.5rem auto;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -152,12 +152,12 @@ select {
   text-align: center;
 }
 
-.categoryselector__2gvA2 {
+.categoryselector__7A-02 {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.hieroglyph__2cMK6 {
+.hieroglyph__kjjGG {
   display: inline-block;
   font-family: 'NotoSansEgyptianHieroglyphs';
   font-size: 2rem;
@@ -173,12 +173,12 @@ select {
   background: none;
 }
 
-.hieroglyph__2cMK6:hover,
-.hieroglyph__2cMK6:focus {
+.hieroglyph__kjjGG:hover,
+.hieroglyph__kjjGG:focus {
   transform: scale(1.8);
 }
 
-.storyboard__2YICt {
+.storyboard__wSo3M {
   margin: 0.5rem auto;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -188,11 +188,11 @@ select {
   text-align: center;
 }
 
-.storyboard__2YICt p {
+.storyboard__wSo3M p {
   line-height: 1.5em;
 }
 
-.about__3kD8f {
+.about__hZke9 {
   position: relative;
   z-index: 2;
   margin: 2rem auto;
@@ -202,15 +202,15 @@ select {
   max-width: 500px;
 }
 
-.about__3kD8f h2 {
+.about__hZke9 h2 {
   margin-bottom: 1rem;
 }
 
-.about__3kD8f p {
+.about__hZke9 p {
   margin-bottom: 0.5rem;
 }
 
-.story__1tQ51 {
+.story__a94gp {
   position: relative;
   z-index: 2;
   margin: 2rem auto;
@@ -218,4 +218,4 @@ select {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.82bd7.css.map*/
+/*# sourceMappingURL=ssr-bundle.b193d.css.map*/
