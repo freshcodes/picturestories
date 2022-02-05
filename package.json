@@ -75,7 +75,7 @@
     "lz-string": "^1.4.4",
     "preact": "^10.6.5",
     "preact-render-to-string": "^5.1.10",
-    "preact-router": "^3.2.1"
+    "preact-router": "^4.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
